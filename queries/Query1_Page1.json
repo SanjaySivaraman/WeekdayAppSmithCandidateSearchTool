@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT apple.publicidentifier,apple.firstName,apple.lastName, apple.phoneNumber,apple.email as \"Candidate Email\",apple.location,apple.companies,apple.educations,apple.headline,apple.summary,\napple.score, users.uid as \"Scout ID\",users.firstname as \"Scout FirstName\", users.email as \"Scout Email\"\nFROM users\nJOIN(\n    SELECT people.publicidentifier,people.firstName,people.lastName, people.phoneNumber,people.locationfilter,people.email,people.location,people.companies,people.educations,people.headline,people.summary,people.score,referred_people.addedby,referred_people.addedon\n    FROM referred_people\n    JOIN people\n    ON people.publicidentifier = referred_people.publicidentifier\n    WHERE ((people.companies LIKE '%Ruby%')\n        OR (people.headline LIKE '%Ruby%')\n        OR (people.summary LIKE '%Ruby%'))\n    AND (people.location LIKE '%India%')\n    AND ((people.relevantExperience >7) AND (people.relevantExperience <12))\n    ORDER BY referred_people.addedon ASC\n    ) as apple\nON users.uid = apple.addedby\nGROUP BY apple.publicidentifier",
+      "body": "SELECT apple.publicidentifier,apple.firstName,apple.lastName, apple.phoneNumber,apple.email as \"Candidate Email\",apple.location,apple.companies,apple.educations,apple.headline,apple.summary,\napple.score, users.uid as \"Scout ID\",users.firstname as \"Scout FirstName\", users.email as \"Scout Email\"\nFROM users\nJOIN(\n    SELECT people.publicidentifier,people.firstName,people.lastName, people.phoneNumber,people.locationfilter,people.email,people.location,people.companies,people.educations,people.headline,people.summary,people.score,referred_people.addedby,referred_people.addedon\n    FROM referred_people\n    JOIN people\n    ON people.publicidentifier = referred_people.publicidentifier\n    WHERE ((people.companies LIKE '%{{Role.text}}%')\n        OR (people.headline LIKE '%{{Role.text}}%')\n        OR (people.summary LIKE '%{{Role.text}}%'))\n\t\tAND ((people.companies LIKE '%{{Skill.text}}%')\n        OR (people.headline LIKE '%{{Skill.text}}%')\n        OR (people.summary LIKE '%{{Skill.text}}%'))\n\t\tAND (people.companies LIKE '%{{Company.text}}%')\n\t\tAND (people.educations LIKE '%{{College.text}}%')\n    AND (people.location LIKE '%{{Location.text}}%')\n    AND ((people.relevantExperience >{{minExp.text}}) AND (people.relevantExperience <{{maxExp.text}}))\n    ORDER BY referred_people.addedon ASC\n    ) as apple\nON users.uid = apple.addedby\nGROUP BY apple.publicidentifier\nLIMIT 100;",
       "pluginSpecifiedTemplates": [
         {
           "value": false
@@ -25,11 +25,23 @@
       ]
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "College.text",
+      "Company.text",
+      "Location.text",
+      "Role.text",
+      "Skill.text",
+      "maxExp.text",
+      "minExp.text"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],

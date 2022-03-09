@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun1",
-    "fullyQualifiedName": "JSObject2.myFun1",
+    "name": "getInfo",
+    "fullyQualifiedName": "getCompanies.getInfo",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,14 +14,14 @@
       "userPermissions": []
     },
     "pageId": "Page1",
-    "collectionId": "Page1_JSObject2",
+    "collectionId": "Page1_getCompanies",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\t//write code here\n\t}",
+      "body": "()=>{\n\tcandidateData : {\n\t\n\t\t\n}\n\tgetCandidateExp.run()\n}",
       "jsArguments": [],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -33,14 +33,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\t//write code here\n\t}"
+      "()=>{\n\tcandidateData : {\n\t\n\t\t\n}\n\tgetCandidateExp.run()\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_myFun1",
+  "id": "Page1_getInfo",
   "deleted": false,
-  "gitSyncId": "62217d0f45ea27345b495163_6221e54e45ea27345b495633"
+  "gitSyncId": "62217d0f45ea27345b495163_62285188b49d5451b1cd2fc4"
 }

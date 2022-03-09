@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun2",
-    "fullyQualifiedName": "JSObject2.myFun2",
+    "name": "transform",
+    "fullyQualifiedName": "utils.transform",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,14 +14,19 @@
       "userPermissions": []
     },
     "pageId": "Page1",
-    "collectionId": "Page1_JSObject2",
+    "collectionId": "Page1_utils",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n\t\t//use async-await or promises\n\t}",
-      "jsArguments": [],
-      "isAsync": true
+      "body": "(data=Table1.tableData)=>{\n\treturn data.map(d => ({\n\t\tcompanies : d.companies,\n\t\teducations : d.educations\n\t}))\n}",
+      "jsArguments": [
+        {
+          "name": "data",
+          "value": "Table1.tableData"
+        }
+      ],
+      "isAsync": false
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -33,14 +38,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n\t\t//use async-await or promises\n\t}"
+      "(data=Table1.tableData)=>{\n\treturn data.map(d => ({\n\t\tcompanies : d.companies,\n\t\teducations : d.educations\n\t}))\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_myFun2",
+  "id": "Page1_transform",
   "deleted": false,
-  "gitSyncId": "62217d0f45ea27345b495163_6221e54e45ea27345b495632"
+  "gitSyncId": "62217d0f45ea27345b495163_62284d38b49d5451b1cd2d73"
 }

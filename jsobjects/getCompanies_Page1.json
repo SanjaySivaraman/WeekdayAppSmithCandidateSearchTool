@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "getCompanies",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetInfo: ()=>{\n\t\n})\n\t\t\n}\n\tgetCandidateExp.run()\n}\n}",
+    "variables": []
+  },
+  "id": "Page1_getCompanies",
+  "deleted": false,
+  "gitSyncId": "62217d0f45ea27345b495163_6221d2a045ea27345b4954de"
+}

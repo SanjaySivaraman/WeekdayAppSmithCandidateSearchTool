@@ -1,0 +1,33 @@
+{
+  "unpublishedCollection": {
+    "name": "utils",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tweekdayPOC : [\n  {\n    \"label\": \"Sanjay\",\n    \"value\": \"Sanjay\"\n  },\n  {\n    \"label\": \"Chetan\",\n    \"value\": \"Chetan\"\n  },\n  {\n    \"label\": \"Vinay\",\n    \"value\": \"Vinay\"\n  }\n],\n\ntransform : (data=Table1.tableData)=>{\n\treturn data.map(d => ({\n\t\tcompanies : d.companies,\n\t\teducations : d.educations\n\t}))\n}\n\n}",
+    "variables": [
+      {
+        "name": "weekdayPOC",
+        "value": [
+          {
+            "label": "Sanjay",
+            "value": "Sanjay"
+          },
+          {
+            "label": "Chetan",
+            "value": "Chetan"
+          },
+          {
+            "label": "Vinay",
+            "value": "Vinay"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "Page1_utils",
+  "deleted": false,
+  "gitSyncId": "62217d0f45ea27345b495163_62284ae3b49d5451b1cd2d68"
+}
