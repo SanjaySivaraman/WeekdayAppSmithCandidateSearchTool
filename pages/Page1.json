@@ -13,13 +13,13 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1580,
+          "bottomRow": 1180,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 52,
+          "version": 53,
           "minHeight": 730,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -384,7 +384,7 @@
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 4,
-                      "bottomRow": 11,
+                      "bottomRow": 9,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -490,7 +490,7 @@
                       "widgetName": "Text6",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
-                      "topRow": 11,
+                      "topRow": 9,
                       "bottomRow": 24,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
@@ -651,20 +651,19 @@
                 "customColumn1",
                 "firstName",
                 "Scout_Email",
-                "relevantExperience",
-                "publicidentifier",
                 "educations",
+                "relevantExperience",
                 "headline",
                 "phoneNumber",
-                "companies",
+                "publicidentifier",
                 "location",
                 "Candidate_Email",
+                "companies",
                 "Scout_ID",
-                "Scout_FirstName",
                 "lastName",
                 "summary",
                 "score",
-                "customColumn2"
+                "Scout_FirstName"
               ],
               "isVisibleDownload": true,
               "dynamicPropertyPathList": [
@@ -743,9 +742,6 @@
                 },
                 {
                   "key": "primaryColumns.companies.computedValue"
-                },
-                {
-                  "key": "derivedColumns.customColumn2.computedValue"
                 }
               ],
               "leftColumn": 0,
@@ -1030,25 +1026,6 @@
                   "isDerived": false,
                   "label": "Exp",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.relevantExperience))}}"
-                },
-                "customColumn2": {
-                  "index": 16,
-                  "width": 150,
-                  "id": "customColumn2",
-                  "columnType": "text",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellVisible": true,
-                  "isDerived": true,
-                  "label": "customColumn2",
-                  "computedValue": "",
-                  "buttonStyle": "rgb(3, 179, 101)",
-                  "buttonLabelColor": "#FFFFFF",
-                  "buttonColor": "#03B365",
-                  "menuColor": "#03B365",
-                  "labelColor": "#FFFFFF"
                 }
               },
               "delimiter": ",",
@@ -1077,25 +1054,6 @@
                   "menuButtonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Open Menu'))}}",
                   "buttonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Y'))}}",
                   "textSize": "PARAGRAPH"
-                },
-                "customColumn2": {
-                  "index": 16,
-                  "width": 150,
-                  "id": "customColumn2",
-                  "columnType": "text",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellVisible": true,
-                  "isDerived": true,
-                  "label": "customColumn2",
-                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( Table2.tableData.))}}",
-                  "buttonStyle": "rgb(3, 179, 101)",
-                  "buttonLabelColor": "#FFFFFF",
-                  "buttonColor": "#03B365",
-                  "menuColor": "#03B365",
-                  "labelColor": "#FFFFFF"
                 }
               },
               "rightColumn": 46,
@@ -1329,7 +1287,7 @@
             },
             {
               "widgetName": "Button1",
-              "onClick": "{{Query1.run(() => showAlert('Search Successful','success'), () => showAlert('Search Failed','error'))}}",
+              "onClick": "{{Run_queries.runquery()}}",
               "buttonColor": "#03B365",
               "dynamicPropertyPathList": [],
               "displayName": "Button",
@@ -1490,8 +1448,8 @@
               "widgetName": "Text9",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b52.svg",
-              "topRow": 116,
-              "bottomRow": 124,
+              "topRow": 81,
+              "bottomRow": 89,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -1511,7 +1469,7 @@
               "rightColumn": 49,
               "textAlign": "LEFT",
               "widgetId": "r1px3ob9a4",
-              "isVisible": true,
+              "isVisible": false,
               "fontStyle": "BOLD",
               "textColor": "#231F20",
               "shouldScroll": false,
@@ -1705,45 +1663,22 @@
                 "step": 62,
                 "status": 75
               }
-            },
-            {
-              "widgetName": "Text10",
-              "displayName": "Text",
-              "iconSVG": "/static/media/icon.97c59b52.svg",
-              "topRow": 128,
-              "bottomRow": 156,
-              "parentRowSpace": 10,
-              "type": "TEXT_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 16.734375,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 1,
-              "dynamicBindingPathList": [
-                {
-                  "key": "text"
-                }
-              ],
-              "shouldTruncate": false,
-              "truncateButtonColor": "#FFC13D",
-              "text": "{{function(){\nlet data = Query2.data;\nreturn data;\n}()}}",
-              "key": "2mq8kutiup",
-              "rightColumn": 63,
-              "textAlign": "LEFT",
-              "widgetId": "xoi74zsker",
-              "isVisible": true,
-              "fontStyle": "BOLD",
-              "textColor": "#231F20",
-              "shouldScroll": true,
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "fontSize": "PARAGRAPH"
             }
           ]
         },
         "layoutOnLoadActions": [
+          [
+            {
+              "id": "Page1_Query2",
+              "name": "Query2",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Text9.text"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
           [
             {
               "id": "Page1_Query1",
@@ -1794,7 +1729,6 @@
           "Table1",
           "Table2",
           "Text1",
-          "Text10",
           "Text3",
           "Text4",
           "Text5",

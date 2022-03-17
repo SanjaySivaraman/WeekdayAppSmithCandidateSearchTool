@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Run_queries",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\trunquery : ()=> {Query1.run(()=>Query2.run())}\n}",
+    "variables": []
+  },
+  "id": "Page1_Run_queries",
+  "deleted": false,
+  "gitSyncId": "62217d0f45ea27345b495163_62330c9e0c166d1757961855"
+}
