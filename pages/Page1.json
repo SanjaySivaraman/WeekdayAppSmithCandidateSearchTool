@@ -13,14 +13,14 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 710,
+          "bottomRow": 1580,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
           "version": 52,
-          "minHeight": 720,
+          "minHeight": 730,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
@@ -33,8 +33,8 @@
               "isCanvas": true,
               "displayName": "Container",
               "iconSVG": "/static/media/icon.1977dca3.svg",
-              "topRow": 58,
-              "bottomRow": 69,
+              "topRow": 106,
+              "bottomRow": 116,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -69,6 +69,7 @@
                   "renderMode": "CANVAS",
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
+                  "dynamicBindingPathList": [],
                   "children": [
                     {
                       "widgetName": "Role_Experience",
@@ -222,7 +223,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 2.353271484375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 21,
+                      "leftColumn": 22,
                       "dynamicBindingPathList": [
                         {
                           "key": "text"
@@ -232,7 +233,7 @@
                       "truncateButtonColor": "#FFC13D",
                       "text": "{{function(){\nlet data = Skill.text\nif (Summary.isChecked)\nreturn data\nelse\nreturn 'z#'\n}()}}\n",
                       "key": "ogytqi6x6i",
-                      "rightColumn": 43,
+                      "rightColumn": 44,
                       "textAlign": "LEFT",
                       "widgetId": "in424k5i71",
                       "isVisible": true,
@@ -305,13 +306,14 @@
               "displayName": "Container",
               "iconSVG": "/static/media/icon.1977dca3.svg",
               "topRow": 8,
-              "bottomRow": 58,
+              "bottomRow": 66,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 7.582763671875,
               "leftColumn": 46,
+              "dynamicBindingPathList": [],
               "children": [
                 {
                   "rightColumn": 485.296875,
@@ -319,7 +321,7 @@
                   "detachFromLayout": true,
                   "widgetId": "mg6dm77x14",
                   "containerStyle": "none",
-                  "bottomRow": 660,
+                  "bottomRow": 580,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "isVisible": true,
@@ -338,13 +340,14 @@
                   "renderMode": "CANVAS",
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
+                  "dynamicBindingPathList": [],
                   "children": [
                     {
                       "widgetName": "Text1",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 24,
-                      "bottomRow": 44,
+                      "bottomRow": 42,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -452,8 +455,8 @@
                       "widgetName": "Text5",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
-                      "topRow": 44,
-                      "bottomRow": 55,
+                      "topRow": 43,
+                      "bottomRow": 56,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -508,37 +511,6 @@
                       "rightColumn": 64,
                       "textAlign": "LEFT",
                       "widgetId": "75ew7hxif1",
-                      "isVisible": true,
-                      "fontStyle": "",
-                      "textColor": "#231F20",
-                      "shouldScroll": true,
-                      "version": 1,
-                      "parentId": "mg6dm77x14",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "fontSize": "PARAGRAPH"
-                    },
-                    {
-                      "widgetName": "Text7",
-                      "displayName": "Text",
-                      "iconSVG": "/static/media/icon.97c59b52.svg",
-                      "topRow": 55,
-                      "bottomRow": 64,
-                      "parentRowSpace": 10,
-                      "type": "TEXT_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 7.270263671875,
-                      "dynamicTriggerPathList": [],
-                      "leftColumn": 0,
-                      "dynamicBindingPathList": [],
-                      "shouldTruncate": false,
-                      "truncateButtonColor": "#FFC13D",
-                      "text": "\"<b>Green Sheet Status :(To Do)</b>\nAlready located in Green Sheet Reference Info(If Any) :\nLast Activity Date - 08-03-2022\nStatus - Tried calling but didn't connect (2)",
-                      "key": "vski9kj3b8",
-                      "rightColumn": 64,
-                      "textAlign": "LEFT",
-                      "widgetId": "h1rke06vxw",
                       "isVisible": true,
                       "fontStyle": "",
                       "textColor": "#231F20",
@@ -678,20 +650,21 @@
               "columnOrder": [
                 "customColumn1",
                 "firstName",
+                "Scout_Email",
                 "relevantExperience",
-                "headline",
                 "publicidentifier",
-                "lastName",
-                "phoneNumber",
-                "Candidate_Email",
-                "location",
-                "companies",
                 "educations",
-                "summary",
-                "score",
+                "headline",
+                "phoneNumber",
+                "companies",
+                "location",
+                "Candidate_Email",
                 "Scout_ID",
                 "Scout_FirstName",
-                "Scout_Email"
+                "lastName",
+                "summary",
+                "score",
+                "customColumn2"
               ],
               "isVisibleDownload": true,
               "dynamicPropertyPathList": [
@@ -699,11 +672,11 @@
                   "key": "tableData"
                 }
               ],
-              "compactMode": "TALL",
+              "compactMode": "SHORT",
               "displayName": "Table",
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
               "topRow": 12,
-              "bottomRow": 58,
+              "bottomRow": 66,
               "isSortable": false,
               "parentRowSpace": 10,
               "type": "TABLE_WIDGET",
@@ -722,6 +695,27 @@
               "dynamicBindingPathList": [
                 {
                   "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.relevantExperience.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Scout_Email.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Scout_FirstName.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Scout_ID.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Candidate_Email.computedValue"
+                },
+                {
+                  "key": "primaryColumns.publicidentifier.computedValue"
+                },
+                {
+                  "key": "primaryColumns.score.computedValue"
                 },
                 {
                   "key": "primaryColumns.summary.computedValue"
@@ -751,25 +745,7 @@
                   "key": "primaryColumns.companies.computedValue"
                 },
                 {
-                  "key": "primaryColumns.score.computedValue"
-                },
-                {
-                  "key": "primaryColumns.publicidentifier.computedValue"
-                },
-                {
-                  "key": "primaryColumns.Candidate_Email.computedValue"
-                },
-                {
-                  "key": "primaryColumns.Scout_ID.computedValue"
-                },
-                {
-                  "key": "primaryColumns.Scout_FirstName.computedValue"
-                },
-                {
-                  "key": "primaryColumns.Scout_Email.computedValue"
-                },
-                {
-                  "key": "primaryColumns.relevantExperience.computedValue"
+                  "key": "derivedColumns.customColumn2.computedValue"
                 }
               ],
               "leftColumn": 0,
@@ -819,7 +795,7 @@
                   "isDisabled": false,
                   "isCellVisible": true,
                   "isDerived": true,
-                  "label": "Y/N",
+                  "label": "Send",
                   "computedValue": "",
                   "buttonStyle": "rgb(3, 179, 101)",
                   "buttonLabelColor": "#FFFFFF",
@@ -827,8 +803,8 @@
                   "menuColor": "#03B365",
                   "labelColor": "#FFFFFF",
                   "menuButtonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Open Menu'))}}",
-                  "buttonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Yes'))}}",
-                  "onClick": "{{send_to_gs.run(() => {}, () => showAlert('Please check if Weekday POC is Valid','warning'))}}",
+                  "buttonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Y'))}}",
+                  "onClick": "{{send_to_gs.run(() => showAlert('Sent Successfully, Check ure GS View','success'), () => showAlert('Please check if Weekday POC is Valid','warning'))}}",
                   "textSize": "PARAGRAPH"
                 },
                 "phoneNumber": {
@@ -1054,6 +1030,25 @@
                   "isDerived": false,
                   "label": "Exp",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.relevantExperience))}}"
+                },
+                "customColumn2": {
+                  "index": 16,
+                  "width": 150,
+                  "id": "customColumn2",
+                  "columnType": "text",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "customColumn2",
+                  "computedValue": "",
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "buttonLabelColor": "#FFFFFF",
+                  "buttonColor": "#03B365",
+                  "menuColor": "#03B365",
+                  "labelColor": "#FFFFFF"
                 }
               },
               "delimiter": ",",
@@ -1072,7 +1067,7 @@
                   "isDisabled": false,
                   "isCellVisible": true,
                   "isDerived": true,
-                  "label": "Y/N",
+                  "label": "Send",
                   "computedValue": "",
                   "buttonStyle": "rgb(3, 179, 101)",
                   "buttonLabelColor": "#FFFFFF",
@@ -1080,8 +1075,27 @@
                   "menuColor": "#03B365",
                   "labelColor": "#FFFFFF",
                   "menuButtonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Open Menu'))}}",
-                  "buttonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Yes'))}}",
+                  "buttonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Y'))}}",
                   "textSize": "PARAGRAPH"
+                },
+                "customColumn2": {
+                  "index": 16,
+                  "width": 150,
+                  "id": "customColumn2",
+                  "columnType": "text",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "customColumn2",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( Table2.tableData.))}}",
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "buttonLabelColor": "#FFFFFF",
+                  "buttonColor": "#03B365",
+                  "menuColor": "#03B365",
+                  "labelColor": "#FFFFFF"
                 }
               },
               "rightColumn": 46,
@@ -1096,6 +1110,7 @@
               "version": 3,
               "totalRecordsCount": 0,
               "parentId": "0",
+              "serverSidePaginationEnabled": false,
               "renderMode": "CANVAS",
               "isLoading": false,
               "horizontalAlignment": "LEFT",
@@ -1109,10 +1124,10 @@
                 "name": 177,
                 "educations": 420,
                 "companies": 160,
-                "customColumn1": 72,
+                "customColumn1": 60,
                 "customColumn2": 155,
-                "firstName": 109,
-                "headline": 275,
+                "firstName": 103,
+                "headline": 474,
                 "relevantExperience": 60,
                 "publicidentifier": 211
               }
@@ -1134,12 +1149,8 @@
               "parentColumnSpace": 17.9375,
               "dynamicTriggerPathList": [],
               "leftColumn": 0,
-              "dynamicBindingPathList": [
-                {
-                  "key": "options"
-                }
-              ],
-              "options": "{{utils.weekdayPOC}}",
+              "dynamicBindingPathList": [],
+              "options": "[\n  {\n    \"label\": \"Sanjay\",\n    \"value\": \"Sanjay\"\n  },\n  {\n    \"label\": \"Chetan\",\n    \"value\": \"Chetan\"\n  },\n  {\n    \"label\": \"Vinay\",\n    \"value\": \"Vinay\"\n  }\n]",
               "placeholderText": "Select option",
               "isDisabled": false,
               "key": "r0xi2s0qa7",
@@ -1320,6 +1331,7 @@
               "widgetName": "Button1",
               "onClick": "{{Query1.run(() => showAlert('Search Successful','success'), () => showAlert('Search Failed','error'))}}",
               "buttonColor": "#03B365",
+              "dynamicPropertyPathList": [],
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca02633.svg",
               "topRow": 8,
@@ -1473,6 +1485,261 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "defaultCheckedState": true
+            },
+            {
+              "widgetName": "Text9",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b52.svg",
+              "topRow": 116,
+              "bottomRow": 124,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 16.6875,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 4,
+              "dynamicBindingPathList": [
+                {
+                  "key": "text"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "#FFC13D",
+              "text": "{{function(){\nlet data = utils.getPids()\nlet out = ''\nfor (let x in data){\nout += \"'\"+ data[x] + \"', \"\nif (x == data.length-1) \nout += \"'\"+ data[x] + \"'\"\n} \nreturn out;\n}()}}\n",
+              "key": "f0l3nwk8z2",
+              "rightColumn": 49,
+              "textAlign": "LEFT",
+              "widgetId": "r1px3ob9a4",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "shouldScroll": false,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "fontSize": "PARAGRAPH"
+            },
+            {
+              "widgetName": "Table2",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "full_name",
+                "public_identifier",
+                "airtable_sheet",
+                "status_greensheet",
+                "notes_greensheet",
+                "green_sheet_timeline"
+              ],
+              "isVisibleDownload": false,
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "iconSVG": "/static/media/icon.db8a9cbd.svg",
+              "topRow": 66,
+              "bottomRow": 74,
+              "isSortable": true,
+              "parentRowSpace": 10,
+              "type": "TABLE_WIDGET",
+              "defaultSelectedRow": "0",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 16.734375,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.public_identifier.computedValue"
+                },
+                {
+                  "key": "primaryColumns.airtable_sheet.computedValue"
+                },
+                {
+                  "key": "primaryColumns.status_greensheet.computedValue"
+                },
+                {
+                  "key": "primaryColumns.notes_greensheet.computedValue"
+                },
+                {
+                  "key": "primaryColumns.green_sheet_timeline.computedValue"
+                },
+                {
+                  "key": "defaultSearchText"
+                },
+                {
+                  "key": "primaryColumns.full_name.computedValue"
+                }
+              ],
+              "leftColumn": 0,
+              "primaryColumns": {
+                "public_identifier": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "public_identifier",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "public_identifier",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.public_identifier))}}"
+                },
+                "airtable_sheet": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "airtable_sheet",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "airtable_sheet",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.airtable_sheet))}}"
+                },
+                "status_greensheet": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "status_greensheet",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "status_greensheet",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.status_greensheet))}}"
+                },
+                "notes_greensheet": {
+                  "index": 3,
+                  "width": 150,
+                  "id": "notes_greensheet",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "notes_greensheet",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.notes_greensheet))}}"
+                },
+                "green_sheet_timeline": {
+                  "index": 4,
+                  "width": 150,
+                  "id": "green_sheet_timeline",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "green_sheet_timeline",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.green_sheet_timeline))}}"
+                },
+                "full_name": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "full_name",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "full_name",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.full_name))}}"
+                }
+              },
+              "delimiter": ",",
+              "defaultSearchText": "{{Table1.selectedRow.publicidentifier}}",
+              "key": "jg8e9j8kub",
+              "derivedColumns": {},
+              "rightColumn": 64,
+              "textSize": "PARAGRAPH",
+              "widgetId": "s39b8n5frr",
+              "isVisibleFilters": false,
+              "tableData": "{{Query2.data}}",
+              "isVisible": true,
+              "label": "Data",
+              "searchKey": "",
+              "enableClientSideSearch": false,
+              "version": 3,
+              "totalRecordsCount": 0,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": false,
+              "isVisiblePagination": false,
+              "primaryColumnId": "public_identifier",
+              "verticalAlignment": "CENTER",
+              "columnSizeMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75
+              }
+            },
+            {
+              "widgetName": "Text10",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b52.svg",
+              "topRow": 128,
+              "bottomRow": 156,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 16.734375,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 1,
+              "dynamicBindingPathList": [
+                {
+                  "key": "text"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "#FFC13D",
+              "text": "{{function(){\nlet data = Query2.data;\nreturn data;\n}()}}",
+              "key": "2mq8kutiup",
+              "rightColumn": 63,
+              "textAlign": "LEFT",
+              "widgetId": "xoi74zsker",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "shouldScroll": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "fontSize": "PARAGRAPH"
             }
           ]
         },
@@ -1496,7 +1763,7 @@
                 "Role_Headline.text",
                 "Role_Summary.text"
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 1000000
             }
           ]
         ],
@@ -1525,12 +1792,14 @@
           "Skill_Summary",
           "Summary",
           "Table1",
+          "Table2",
           "Text1",
+          "Text10",
           "Text3",
           "Text4",
           "Text5",
           "Text6",
-          "Text7",
+          "Text9",
           "maxExp",
           "minExp"
         ],

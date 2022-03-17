@@ -6,26 +6,8 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tweekdayPOC : [\n  {\n    \"label\": \"Sanjay\",\n    \"value\": \"Sanjay\"\n  },\n  {\n    \"label\": \"Chetan\",\n    \"value\": \"Chetan\"\n  },\n  {\n    \"label\": \"Vinay\",\n    \"value\": \"Vinay\"\n  }\n],\n\ntransform : (data=Table1.tableData)=>{\n\treturn data.map(d => ({\n\t\tcompanies : d.companies,\n\t\teducations : d.educations\n\t}))\n}\n\n}",
-    "variables": [
-      {
-        "name": "weekdayPOC",
-        "value": [
-          {
-            "label": "Sanjay",
-            "value": "Sanjay"
-          },
-          {
-            "label": "Chetan",
-            "value": "Chetan"
-          },
-          {
-            "label": "Vinay",
-            "value": "Vinay"
-          }
-        ]
-      }
-    ]
+    "body": "export default {\ngetPids : (data=Table1.tableData)=>{\n\treturn data.map(d => (d.publicidentifier))\n}, \ngetTabel2Data : () => {\n\treturn Query2.data;\n},\n\n}\n",
+    "variables": []
   },
   "id": "Page1_utils",
   "deleted": false,

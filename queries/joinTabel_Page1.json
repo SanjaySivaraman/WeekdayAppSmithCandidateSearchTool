@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "transform",
-    "fullyQualifiedName": "utils.transform",
+    "name": "joinTabel",
+    "fullyQualifiedName": "Join.joinTabel",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,18 +14,13 @@
       "userPermissions": []
     },
     "pageId": "Page1",
-    "collectionId": "Page1_utils",
+    "collectionId": "Page1_Join",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "(data=Table1.tableData)=>{\n\treturn data.map(d => ({\n\t\tcompanies : d.companies,\n\t\teducations : d.educations\n\t}))\n}",
-      "jsArguments": [
-        {
-          "name": "data",
-          "value": "Table1.tableData"
-        }
-      ],
+      "body": "() => {\n\tlet Pids = Table1.tableData.map(data => data.publicidentifier);\n\tlet joinedData = Query2.data.map(data => {\n\t\tlet newData = Pids.map(d => {\n\t\t\treturn { d , ...data}\n\t\t});\n\treturn newData;\n});\nconsole.log(joinedData.flat());\nreturn (joinedData);\n}",
+      "jsArguments": [],
       "isAsync": false
     },
     "executeOnLoad": false,
@@ -38,14 +33,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "(data=Table1.tableData)=>{\n\treturn data.map(d => ({\n\t\tcompanies : d.companies,\n\t\teducations : d.educations\n\t}))\n}"
+      "() => {\n\tlet Pids = Table1.tableData.map(data => data.publicidentifier);\n\tlet joinedData = Query2.data.map(data => {\n\t\tlet newData = Pids.map(d => {\n\t\t\treturn { d , ...data}\n\t\t});\n\treturn newData;\n});\nconsole.log(joinedData.flat());\nreturn (joinedData);\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_transform",
+  "id": "Page1_joinTabel",
   "deleted": false,
-  "gitSyncId": "62217d0f45ea27345b495163_62284d38b49d5451b1cd2d73"
+  "gitSyncId": "62217d0f45ea27345b495163_623174fef1c0af1ceded5081"
 }

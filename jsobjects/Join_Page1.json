@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Join",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\njoinTabel : () => {\n\tlet Pids = Table1.tableData.map(data => data.publicidentifier);\n\tlet joinedData = Query2.data.map(data => {\n\t\tlet newData = Pids.map(d => {\n\t\t\treturn { d , ...data}\n\t\t});\n\treturn newData;\n});\nconsole.log(joinedData.flat());\nreturn (joinedData);\n}\n}",
+    "variables": []
+  },
+  "id": "Page1_Join",
+  "deleted": false,
+  "gitSyncId": "62217d0f45ea27345b495163_623174c0f1c0af1ceded507f"
+}

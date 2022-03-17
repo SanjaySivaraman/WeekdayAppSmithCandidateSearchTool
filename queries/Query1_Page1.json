@@ -14,10 +14,10 @@
     },
     "pageId": "Page1",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 1000000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT apple.publicidentifier,apple.firstName,apple.lastName, apple.phoneNumber,apple.email as \"Candidate Email\",apple.location,apple.companies,apple.educations,apple.headline,apple.summary,\napple.score,apple.relevantExperience, users.uid as \"Scout ID\",users.firstname as \"Scout FirstName\", users.email as \"Scout Email\"\nFROM users\nJOIN(\n    SELECT people.publicidentifier,people.firstName,people.lastName, people.phoneNumber,people.locationfilter,people.email,people.location,people.companies,people.educations,people.headline,people.summary,people.score,people.relevantExperience,referred_people.addedby,referred_people.addedon\n    FROM referred_people\n    JOIN people\n    ON people.publicidentifier = referred_people.publicidentifier\n    WHERE (people.companies LIKE '%{{Role_Experience.text}}%'\n    \tOR people.headline LIKE '%{{Role_Headline.text}}%'\n    \tOR people.summary LIKE '%{{Role_Summary.text}}%')\n\t\tAND (people.companies LIKE '%{{Skill_Experience.text}}%'\n    \tOR people.headline LIKE '%{{Skill_Headline.text}}%'\n    \tOR people.summary LIKE '%{{Skill_Summary.text}}%')\n\t\tAND (people.companies LIKE '%{{Company.text}}%')\n\t\tAND (people.educations LIKE '%{{College.text}}%')\n    AND (people.location LIKE '%{{Location.text}}%')\n    AND (people.relevantExperience >{{minExp.text}} AND people.relevantExperience <{{maxExp.text}})\n    ORDER BY referred_people.addedon ASC\n    ) as apple\nON users.uid = apple.addedby\nGROUP BY apple.publicidentifier\nORDER BY apple.score DESC\nLIMIT 500;",
+      "body": "SELECT apple.publicidentifier,apple.firstName,apple.lastName, apple.phoneNumber,apple.email as \"Candidate Email\",apple.location,apple.companies,apple.educations,apple.headline,apple.summary,\napple.score,apple.relevantExperience, users.uid as \"Scout ID\",users.firstname as \"Scout FirstName\", users.email as \"Scout Email\"\nFROM users\nJOIN(\n    SELECT people.publicidentifier,people.firstName,people.lastName, people.phoneNumber,people.locationfilter,people.email,people.location,people.companies,people.educations,people.headline,people.summary,people.score,people.relevantExperience,referred_people.addedby,referred_people.addedon\n    FROM referred_people\n    JOIN people\n    ON people.publicidentifier = referred_people.publicidentifier\n    WHERE (people.companies LIKE '%{{Role_Experience.text}}%'\n        OR people.headline LIKE '%{{Role_Headline.text}}%'\n        OR people.summary LIKE '%{{Role_Summary.text}}%')\n        AND (people.companies LIKE '%{{Skill_Experience.text}}%'\n        OR people.headline LIKE '%{{Skill_Headline.text}}%'\n        OR people.summary LIKE '%{{Skill_Summary.text}}%')\n        AND (people.companies LIKE '%{{Company.text}}%')\n        AND (people.educations LIKE '%{{College.text}}%')\n    AND (people.location LIKE '%{{Location.text}}%')\n    AND (people.relevantExperience >{{minExp.text}} AND people.relevantExperience <{{maxExp.text}})\n    ORDER BY referred_people.addedon ASC\n    ) as apple\nON users.uid = apple.addedby\nGROUP BY apple.publicidentifier\nORDER BY apple.score DESC\nLIMIT 10;",
       "pluginSpecifiedTemplates": [
         {
           "value": false
@@ -31,7 +31,9 @@
       }
     ],
     "isValid": true,
-    "invalids": [],
+    "invalids": [
+      "'Query timeout' field must be an integer between 0 and 60000"
+    ],
     "messages": [],
     "jsonPathKeys": [
       "College.text",
