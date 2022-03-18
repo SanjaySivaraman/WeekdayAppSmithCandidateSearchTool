@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Join_Loop",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tjoin : () => {\n\t\t()=> {Query1.run(()=>Query2.run())}\n\t\tlet arr1 = Query1.data;\n\t\tlet arr2 = Query2.data;\n\t\tconsole.log(arr2[[\"publicidentifier\"]])\n\t\tlet flag = true;\n\t\tfor (let i in arr1){\n\t\t\tfor (let j in arr2){\n\t\t\t\tif(arr1[i][\"publicidentifier\"] === arr2[j][\"public_identifier\"])\n\t\t\t\t{\n\t\t\t\t\tlet out ='Duplicate'\n\t\t\t\t\tarr1[i][\"Duplicate\"] = out;\n\t\t\t\t\tflag = false\n\t\t\t\t}\n\t\t\t}\n\t\t\tif(flag){\n\t\t\t\tarr1[i][\"Duplicate\"] = \"Non duplicate\"\n\t\t\t}\n\t\t}\n\t\treturn arr1\n\t}\n}",
+    "variables": []
+  },
+  "id": "Page1_Join_Loop",
+  "deleted": false,
+  "gitSyncId": "62217d0f45ea27345b495163_6233fe4b4d9aea1b062ab98a"
+}

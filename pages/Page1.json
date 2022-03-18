@@ -8,7 +8,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1083,
+          "rightColumn": 1701,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
@@ -649,21 +649,22 @@
               "defaultPageSize": 0,
               "columnOrder": [
                 "customColumn1",
+                "Duplicate",
                 "firstName",
-                "Scout_Email",
-                "educations",
                 "relevantExperience",
                 "headline",
-                "phoneNumber",
                 "publicidentifier",
-                "location",
-                "Candidate_Email",
-                "companies",
-                "Scout_ID",
                 "lastName",
+                "phoneNumber",
+                "Candidate_Email",
+                "location",
+                "companies",
+                "educations",
                 "summary",
                 "score",
-                "Scout_FirstName"
+                "Scout_ID",
+                "Scout_FirstName",
+                "Scout_Email"
               ],
               "isVisibleDownload": true,
               "dynamicPropertyPathList": [
@@ -692,9 +693,6 @@
                 }
               ],
               "dynamicBindingPathList": [
-                {
-                  "key": "tableData"
-                },
                 {
                   "key": "primaryColumns.relevantExperience.computedValue"
                 },
@@ -742,6 +740,12 @@
                 },
                 {
                   "key": "primaryColumns.companies.computedValue"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.Duplicate.computedValue"
                 }
               ],
               "leftColumn": 0,
@@ -1026,6 +1030,23 @@
                   "isDerived": false,
                   "label": "Exp",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.relevantExperience))}}"
+                },
+                "Duplicate": {
+                  "index": 17,
+                  "width": 150,
+                  "id": "Duplicate",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Duplicate",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Duplicate))}}"
                 }
               },
               "delimiter": ",",
@@ -1060,7 +1081,7 @@
               "textSize": "PARAGRAPH",
               "widgetId": "4cdc9mccyn",
               "isVisibleFilters": true,
-              "tableData": "{{Query1.data}}",
+              "tableData": "{{Join_Loop.join()}}",
               "isVisible": true,
               "label": "Data",
               "searchKey": "",
@@ -1084,10 +1105,11 @@
                 "companies": 160,
                 "customColumn1": 60,
                 "customColumn2": 155,
-                "firstName": 103,
+                "firstName": 80,
                 "headline": 474,
                 "relevantExperience": 60,
-                "publicidentifier": 211
+                "publicidentifier": 211,
+                "Duplicate": 110
               }
             },
             {
@@ -1464,7 +1486,7 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "#FFC13D",
-              "text": "{{function(){\nlet data = utils.getPids()\nlet out = ''\nfor (let x in data){\nout += \"'\"+ data[x] + \"', \"\nif (x == data.length-1) \nout += \"'\"+ data[x] + \"'\"\n} \nreturn out;\n}()}}\n",
+              "text": "{{function(){\nlet data = Query1.data\nlet out = ''\nfor (let x in data){\nout += \"'\"+ data[x][\"publicidentifier\"] + \"', \"\nif (x == data.length-1) \nout += \"'\"+ data[x][\"publicidentifier\"] + \"'\"\n} \nreturn out;\n}()}}\n",
               "key": "f0l3nwk8z2",
               "rightColumn": 49,
               "textAlign": "LEFT",

@@ -21,15 +21,7 @@
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "Page1_getTabel2Data": {
-      "unpublishedUserSetOnLoad": false,
-      "publishedUserSetOnLoad": false
-    },
     "Page1_Query1": {
-      "unpublishedUserSetOnLoad": false,
-      "publishedUserSetOnLoad": false
-    },
-    "Page1_getPids": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
@@ -38,6 +30,10 @@
       "publishedUserSetOnLoad": true
     },
     "Page1_joinTabel": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "Page1_join": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     }
