@@ -22,8 +22,8 @@
       "publishedUserSetOnLoad": false
     },
     "Page1_Query1": {
-      "unpublishedUserSetOnLoad": false,
-      "publishedUserSetOnLoad": false
+      "unpublishedUserSetOnLoad": true,
+      "publishedUserSetOnLoad": true
     },
     "Page1_Query2": {
       "unpublishedUserSetOnLoad": true,

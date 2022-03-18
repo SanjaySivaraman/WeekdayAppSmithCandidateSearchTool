@@ -1688,30 +1688,7 @@
             }
           ]
         },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Page1_Query1",
-              "name": "Query1",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Location.text",
-                "maxExp.text",
-                "minExp.text",
-                "Skill_Experience.text",
-                "College.text",
-                "Skill_Headline.text",
-                "Skill_Summary.text",
-                "Company.text",
-                "Role_Experience.text",
-                "Role_Headline.text",
-                "Role_Summary.text"
-              ],
-              "timeoutInMillisecond": 1000000
-            }
-          ]
-        ],
+        "layoutOnLoadActions": [],
         "widgetNames": [
           "Button1",
           "Button2",
