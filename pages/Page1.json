@@ -1509,6 +1509,7 @@
                 "public_identifier",
                 "airtable_sheet",
                 "status_greensheet",
+                "last_activity_date",
                 "notes_greensheet",
                 "green_sheet_timeline"
               ],
@@ -1550,6 +1551,9 @@
                 },
                 {
                   "key": "primaryColumns.full_name.computedValue"
+                },
+                {
+                  "key": "primaryColumns.last_activity_date.computedValue"
                 }
               ],
               "leftColumn": 0,
@@ -1655,6 +1659,23 @@
                   "isDerived": false,
                   "label": "full_name",
                   "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.full_name))}}"
+                },
+                "last_activity_date": {
+                  "index": 4,
+                  "width": 150,
+                  "id": "last_activity_date",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "last_activity_date",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.last_activity_date))}}"
                 }
               },
               "delimiter": ",",
@@ -1683,7 +1704,12 @@
               "columnSizeMap": {
                 "task": 245,
                 "step": 62,
-                "status": 75
+                "status": 75,
+                "notes_greensheet": 620,
+                "status_greensheet": 118,
+                "airtable_sheet": 119,
+                "full_name": 94,
+                "last_activity_date": 157
               }
             }
           ]

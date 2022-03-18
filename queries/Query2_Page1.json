@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT all_candidate_profiles.full_name, all_candidate_profiles.public_identifier, all_candidate_profiles.airtable_sheet, all_candidate_profiles.status_greensheet, all_candidate_profiles.notes_greensheet, all_candidate_profiles.green_sheet_timeline \nFROM all_candidate_profiles\nWHERE all_candidate_profiles.public_identifier IN ({{Text9.text}}) \nLIMIT 300;",
+      "body": "SELECT all_candidate_profiles.full_name, all_candidate_profiles.public_identifier, all_candidate_profiles.airtable_sheet, all_candidate_profiles.status_greensheet, all_candidate_profiles.last_activity_date, all_candidate_profiles.notes_greensheet, all_candidate_profiles.green_sheet_timeline \nFROM all_candidate_profiles\nWHERE all_candidate_profiles.public_identifier IN ({{Text9.text}}) \nLIMIT 300;",
       "pluginSpecifiedTemplates": [
         {
           "value": false
