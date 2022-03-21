@@ -8,7 +8,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1701,
+          "rightColumn": 1083,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
@@ -652,19 +652,20 @@
                 "Duplicate",
                 "firstName",
                 "relevantExperience",
-                "headline",
                 "publicidentifier",
-                "lastName",
-                "phoneNumber",
-                "Candidate_Email",
-                "location",
-                "companies",
-                "educations",
+                "headline",
                 "summary",
-                "score",
-                "Scout_ID",
+                "lastName",
                 "Scout_FirstName",
-                "Scout_Email"
+                "location",
+                "phoneNumber",
+                "companies",
+                "Candidate_Email",
+                "Scout_Email",
+                "score",
+                "educations",
+                "Scout_ID",
+                "customColumn2"
               ],
               "isVisibleDownload": true,
               "dynamicPropertyPathList": [
@@ -693,6 +694,12 @@
                 }
               ],
               "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.Duplicate.computedValue"
+                },
                 {
                   "key": "primaryColumns.relevantExperience.computedValue"
                 },
@@ -742,10 +749,10 @@
                   "key": "primaryColumns.companies.computedValue"
                 },
                 {
-                  "key": "tableData"
+                  "key": "derivedColumns.customColumn2.computedValue"
                 },
                 {
-                  "key": "primaryColumns.Duplicate.computedValue"
+                  "key": "primaryColumns.customColumn2.computedValue"
                 }
               ],
               "leftColumn": 0,
@@ -1047,6 +1054,25 @@
                   "isDerived": false,
                   "label": "Duplicate",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Duplicate))}}"
+                },
+                "customColumn2": {
+                  "index": 17,
+                  "width": 150,
+                  "id": "customColumn2",
+                  "columnType": "text",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "Linkedin URL",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( 'https://www.linkedin.com/in/' + currentRow.publicidentifier + '/'))}}",
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "buttonLabelColor": "#FFFFFF",
+                  "buttonColor": "#03B365",
+                  "menuColor": "#03B365",
+                  "labelColor": "#FFFFFF"
                 }
               },
               "delimiter": ",",
@@ -1075,6 +1101,25 @@
                   "menuButtonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Open Menu'))}}",
                   "buttonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Y'))}}",
                   "textSize": "PARAGRAPH"
+                },
+                "customColumn2": {
+                  "index": 17,
+                  "width": 150,
+                  "id": "customColumn2",
+                  "columnType": "text",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "Linkedin URL",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( 'https://www.linkedin.com/in/' + currentRow.publicidentifier + '/'))}}",
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "buttonLabelColor": "#FFFFFF",
+                  "buttonColor": "#03B365",
+                  "menuColor": "#03B365",
+                  "labelColor": "#FFFFFF"
                 }
               },
               "rightColumn": 46,
@@ -1532,28 +1577,28 @@
                   "key": "tableData"
                 },
                 {
-                  "key": "primaryColumns.public_identifier.computedValue"
-                },
-                {
-                  "key": "primaryColumns.airtable_sheet.computedValue"
-                },
-                {
-                  "key": "primaryColumns.status_greensheet.computedValue"
-                },
-                {
-                  "key": "primaryColumns.notes_greensheet.computedValue"
-                },
-                {
-                  "key": "primaryColumns.green_sheet_timeline.computedValue"
-                },
-                {
-                  "key": "defaultSearchText"
+                  "key": "primaryColumns.last_activity_date.computedValue"
                 },
                 {
                   "key": "primaryColumns.full_name.computedValue"
                 },
                 {
-                  "key": "primaryColumns.last_activity_date.computedValue"
+                  "key": "primaryColumns.green_sheet_timeline.computedValue"
+                },
+                {
+                  "key": "primaryColumns.notes_greensheet.computedValue"
+                },
+                {
+                  "key": "primaryColumns.status_greensheet.computedValue"
+                },
+                {
+                  "key": "primaryColumns.airtable_sheet.computedValue"
+                },
+                {
+                  "key": "primaryColumns.public_identifier.computedValue"
+                },
+                {
+                  "key": "defaultSearchText"
                 }
               ],
               "leftColumn": 0,
