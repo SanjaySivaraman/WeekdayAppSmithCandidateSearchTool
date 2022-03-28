@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 1000000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT apple.publicidentifier,apple.firstName,apple.lastName, apple.phoneNumber,apple.email as \"Candidate Email\",apple.location,apple.companies,apple.educations,apple.headline,apple.summary,\napple.score,apple.relevantExperience, users.uid as \"Scout ID\",users.firstname as \"Scout FirstName\", users.email as \"Scout Email\"\nFROM users\nJOIN(\n    SELECT people.publicidentifier,people.firstName,people.lastName, people.phoneNumber,people.locationfilter,people.email,people.location,people.companies,people.educations,people.headline,people.summary,people.score,people.relevantExperience,referred_people.addedby,referred_people.addedon\n    FROM referred_people\n    JOIN people\n    ON people.publicidentifier = referred_people.publicidentifier\n    WHERE (people.companies LIKE '%{{Role_Experience.text}}%'\n        OR people.headline LIKE '%{{Role_Headline.text}}%'\n        OR people.summary LIKE '%{{Role_Summary.text}}%')\n        AND (people.companies LIKE '%{{Skill_Experience.text}}%'\n        OR people.headline LIKE '%{{Skill_Headline.text}}%'\n        OR people.summary LIKE '%{{Skill_Summary.text}}%')\n        AND (people.companies LIKE '%{{Company.text}}%')\n        AND (people.educations LIKE '%{{College.text}}%')\n    AND (people.location LIKE '%{{Location.text}}%')\n    AND (people.relevantExperience >{{minExp.text}} AND people.relevantExperience <{{maxExp.text}})\n    ORDER BY referred_people.addedon ASC\n    ) as apple\nON users.uid = apple.addedby\nGROUP BY apple.publicidentifier\nORDER BY apple.score DESC\nLIMIT 300;",
+      "body": "SELECT apple.publicidentifier,apple.firstName,apple.lastName, apple.phoneNumber,apple.email as \"Candidate Email\",apple.location,apple.companies,apple.educations,apple.headline,apple.summary,\napple.score,apple.relevantExperience, users.uid as \"Scout ID\",users.firstname as \"Scout FirstName\", users.email as \"Scout Email\"\nFROM users\nJOIN(\n    SELECT people.publicidentifier,people.firstName,people.lastName, people.phoneNumber,people.locationfilter,people.email,people.location,people.companies,people.educations,people.headline,people.summary,people.score,people.relevantExperience,referred_people.addedby,referred_people.addedon\n    FROM referred_people\n    JOIN people\n    ON people.publicidentifier = referred_people.publicidentifier\n    WHERE (people.companies LIKE '%{{Keyword_Experience.text}}%'\n        OR people.headline LIKE '%{{Keyword_Headline.text}}%'\n        OR people.summary LIKE '%{{Keyword_Summary.text}}%'\n\t\t\t\tOR people.resumeText LIKE '%{{Keyword_Summary.text}}%'\t)\n        AND (people.companies LIKE '%{{Company.text}}%')\n        AND (people.educations LIKE '%{{College.text}}%')\n    AND (people.location LIKE '%{{Location.text}}%')\n    AND (people.relevantExperience >{{minExp.text}} AND people.relevantExperience <{{maxExp.text}})\n\t\tAND (people.score > 0 OR people.score IS NULL)\n\t\tAND ({{Contact.selectedOptionValue}} IS NOT NULL)\n    ORDER BY referred_people.addedon ASC\n    ) as apple\nON users.uid = apple.addedby\nGROUP BY apple.publicidentifier\nORDER BY RAND ()\nLIMIT 150;",
       "pluginSpecifiedTemplates": [
         {
           "value": false
@@ -38,13 +38,11 @@
     "jsonPathKeys": [
       "College.text",
       "Company.text",
+      "Contact.selectedOptionValue",
+      "Keyword_Experience.text",
+      "Keyword_Headline.text",
+      "Keyword_Summary.text",
       "Location.text",
-      "Role_Experience.text",
-      "Role_Headline.text",
-      "Role_Summary.text",
-      "Skill_Experience.text",
-      "Skill_Headline.text",
-      "Skill_Summary.text",
       "maxExp.text",
       "minExp.text"
     ],
