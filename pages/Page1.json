@@ -1619,7 +1619,7 @@
               "textSize": "PARAGRAPH",
               "widgetId": "s39b8n5frr",
               "isVisibleFilters": false,
-              "tableData": "{{Query2.data}}",
+              "tableData": "{{no_candidate_found_hence.data}}",
               "isVisible": true,
               "label": "Data",
               "searchKey": "",

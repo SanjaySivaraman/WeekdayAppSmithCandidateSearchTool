@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\njoinTabel : () => {\n\tlet Pids = Query1.data.map(data => data.publicidentifier);\n\tlet joinedData = Query2.data.map(data => {\n\t\tlet newData = Pids.map(d => {\n\t\t\treturn { d , ...data}\n\t\t});\n\treturn newData;\n});\nconsole.log(joinedData.flat());\nreturn (joinedData);\n}\n}\n\t\t\t",
+    "body": "export default {\njoinTabel : () => {\n\tlet Pids = Query1.data.map(data => data.publicidentifier);\n\tlet joinedData = no_candidate_found_hence.data.map(data => {\n\t\tlet newData = Pids.map(d => {\n\t\t\treturn { d , ...data}\n\t\t});\n\treturn newData;\n});\nconsole.log(joinedData.flat());\nreturn (joinedData);\n}\n}\n\t\t\t",
     "variables": []
   },
   "id": "Page1_Join_Map",
