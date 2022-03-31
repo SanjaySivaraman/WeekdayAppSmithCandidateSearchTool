@@ -1,11 +1,9 @@
 {
-  "isPublic": true,
   "viewMode": false,
   "appIsExample": false,
   "unreadCommentThreads": 0,
   "color": "#CCCCCC",
   "icon": "open-new-tab",
-  "slug": "weekday-candidate-search-tool-v0-safe",
   "unpublishedAppLayout": {
     "type": "FLUID"
   },
@@ -13,6 +11,8 @@
     "type": "FLUID"
   },
   "evaluationVersion": 2,
+  "applicationVersion": 1,
+  "isManualUpdate": false,
   "createdAt": {
     "seconds": 1646361871,
     "nanos": 505000000
