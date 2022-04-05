@@ -13,10 +13,6 @@
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "Page1_no_candidate_found_hence": {
-      "unpublishedUserSetOnLoad": true,
-      "publishedUserSetOnLoad": true
-    },
     "Page1_Join_Loop.join": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
@@ -37,7 +33,15 @@
       "unpublishedUserSetOnLoad": true,
       "publishedUserSetOnLoad": true
     },
+    "Page1_Query2": {
+      "unpublishedUserSetOnLoad": true,
+      "publishedUserSetOnLoad": true
+    },
     "Page1_Run_queries.runquery": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "Page1_Search_Logs": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     }

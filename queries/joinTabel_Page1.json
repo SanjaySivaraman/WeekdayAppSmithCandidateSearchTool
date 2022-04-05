@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\tlet Pids = Query1.data.map(data => data.publicidentifier);\n\tlet joinedData = no_candidate_found_hence.data.map(data => {\n\t\tlet newData = Pids.map(d => {\n\t\t\treturn { d , ...data}\n\t\t});\n\treturn newData;\n});\nconsole.log(joinedData.flat());\nreturn (joinedData);\n}",
+      "body": "() => {\n\tlet Pids = Query1.data.map(data => data.publicidentifier);\n\tlet joinedData = Query2.data.map(data => {\n\t\tlet newData = Pids.map(d => {\n\t\t\treturn { d , ...data}\n\t\t});\n\treturn newData;\n});\nconsole.log(joinedData.flat());\nreturn (joinedData);\n}",
       "jsArguments": [],
       "isAsync": false
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\tlet Pids = Query1.data.map(data => data.publicidentifier);\n\tlet joinedData = no_candidate_found_hence.data.map(data => {\n\t\tlet newData = Pids.map(d => {\n\t\t\treturn { d , ...data}\n\t\t});\n\treturn newData;\n});\nconsole.log(joinedData.flat());\nreturn (joinedData);\n}"
+      "() => {\n\tlet Pids = Query1.data.map(data => data.publicidentifier);\n\tlet joinedData = Query2.data.map(data => {\n\t\tlet newData = Pids.map(d => {\n\t\t\treturn { d , ...data}\n\t\t});\n\treturn newData;\n});\nconsole.log(joinedData.flat());\nreturn (joinedData);\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

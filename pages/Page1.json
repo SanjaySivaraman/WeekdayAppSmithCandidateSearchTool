@@ -1125,7 +1125,7 @@
                 "status": 75,
                 "name": 177,
                 "educations": 420,
-                "companies": 160,
+                "companies": 245,
                 "customColumn1": 90,
                 "customColumn2": 155,
                 "firstName": 80,
@@ -1137,7 +1137,7 @@
               }
             },
             {
-              "widgetName": "Select1",
+              "widgetName": "WeekdayPOC",
               "isFilterable": true,
               "displayName": "Select",
               "iconSVG": "/static/media/icon.bd99caba.svg",
@@ -1640,7 +1640,7 @@
               "textSize": "PARAGRAPH",
               "widgetId": "s39b8n5frr",
               "isVisibleFilters": false,
-              "tableData": "{{no_candidate_found_hence.data}}",
+              "tableData": "{{Query2.data}}",
               "isVisible": true,
               "label": "Data",
               "searchKey": "",
@@ -1842,7 +1842,6 @@
           "Location",
           "MainContainer",
           "ResumeText",
-          "Select1",
           "Select2",
           "Summary",
           "Table1",
@@ -1853,6 +1852,7 @@
           "Text5",
           "Text6",
           "Text9",
+          "WeekdayPOC",
           "jdToPitch",
           "maxExp",
           "minExp"

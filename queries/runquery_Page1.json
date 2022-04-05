@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "()=> {Query1.run(()=>no_candidate_found_hence.run(()=>Join_Loop.join()))}",
+      "body": "()=> {Query1.run(()=>Query2.run(()=>Join_Loop.join()))}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "()=> {Query1.run(()=>no_candidate_found_hence.run(()=>Join_Loop.join()))}"
+      "()=> {Query1.run(()=>Query2.run(()=>Join_Loop.join()))}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

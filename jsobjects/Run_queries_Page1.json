@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\trunquery : ()=> {Query1.run(()=>no_candidate_found_hence.run(()=>Join_Loop.join()))}\n}",
+    "body": "export default {\n\trunquery : ()=> {Query1.run(()=>Query2.run(()=>Join_Loop.join()))}\n}",
     "variables": []
   },
   "id": "Page1_Run_queries",

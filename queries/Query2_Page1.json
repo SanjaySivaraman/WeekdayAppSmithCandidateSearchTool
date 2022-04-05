@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "no_candidate_found_hence",
+    "name": "Query2",
     "datasource": {
       "pluginId": "mysql-plugin",
       "messages": [],
@@ -41,7 +41,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_no_candidate_found_hence",
+  "id": "Page1_Query2",
   "deleted": false,
   "gitSyncId": "62217d0f45ea27345b495163_6230c0a7f1c0af1ceded4838"
 }
