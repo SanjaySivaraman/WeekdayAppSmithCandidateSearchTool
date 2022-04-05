@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "()=> {Query1.run(()=>Query2.run(()=>Join_Loop.join()))}",
+      "body": "()=> {\n\t\t\tQuery1.run( \t\n\t\t\t\t()=>Query2.run(\n\t\t\t\t\t\t\t\t()=>Join_Loop.join()\n\t\t\t\t\t)\n\t\t\t),\n\t\t\tSearch_Logs.run()\n\t}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "()=> {Query1.run(()=>Query2.run(()=>Join_Loop.join()))}"
+      "()=> {\n\t\t\tQuery1.run( \t\n\t\t\t\t()=>Query2.run(\n\t\t\t\t\t\t\t\t()=>Join_Loop.join()\n\t\t\t\t\t)\n\t\t\t),\n\t\t\tSearch_Logs.run()\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

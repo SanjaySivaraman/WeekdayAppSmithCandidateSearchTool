@@ -56,7 +56,7 @@
         },
         {
           "key": "rowObject",
-          "value": "{{\n{\n...Table1.selectedRow\n}\n}}"
+          "value": "{{\n{\n \t\"Test\" : \"Inserted Successfully\",\n\t\"Weekday_POC\" : WeekdayPOC.selectedOptionValue,\n \t\"Jd_to_pitch\" : jdToPitch.selectedOptionValue,\n \t\"Candidates_Found_Count\" : Table1.totalRecordsCount,\n \t\"Search_Company\" : Company.text,\n\t\"Search_Education\" : College.text,\n\t\"Search_Cluster\" : Cluster.selectedOptionValue,\n\t\"Search_Keyword\" : Keyword.text,\n \t\"In_Headline\" : Headline.isChecked,\n \t\"In_Summary\" : Summary.isChecked,\n\t\"In_Experience\" : Experience.isChecked,\n\t\"In_Resume_Text\" : ResumeText.isChecked,\n\t\"Min_Exp\" : minExp.text,\n\t\"Max_Exp\" : maxExp.text,\n\t\"Location\": Location.text,\n\t\"Contact Info\" : Contact.selectedOptionLabel\n}\n}}"
         },
         {
           "key": "rowObjects"
@@ -91,7 +91,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "{\n...Table1.selectedRow\n}"
+      "{\n \t\"Test\" : \"Inserted Successfully\",\n\t\"Weekday_POC\" : WeekdayPOC.selectedOptionValue,\n \t\"Jd_to_pitch\" : jdToPitch.selectedOptionValue,\n \t\"Candidates_Found_Count\" : Table1.totalRecordsCount,\n \t\"Search_Company\" : Company.text,\n\t\"Search_Education\" : College.text,\n\t\"Search_Cluster\" : Cluster.selectedOptionValue,\n\t\"Search_Keyword\" : Keyword.text,\n \t\"In_Headline\" : Headline.isChecked,\n \t\"In_Summary\" : Summary.isChecked,\n\t\"In_Experience\" : Experience.isChecked,\n\t\"In_Resume_Text\" : ResumeText.isChecked,\n\t\"Min_Exp\" : minExp.text,\n\t\"Max_Exp\" : maxExp.text,\n\t\"Location\": Location.text,\n\t\"Contact Info\" : Contact.selectedOptionLabel\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
