@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Run_Search",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\trunquery :  \n\t()=> {\t\t\n\t\t\tQuery1.run( \t\n\t\t\t\t()=> Query2.run(\n\t\t\t\t\t\t\t\t//()=>Join_Loop.join(\n\t\t\t\t\t\t\t\t\t//()=>Search_Logs.run()\n\t\t\t\t\t\t\t\t\t()=>send_to_rs.run().then(storeValue(\"count\",0))\n\t\t\t\t\t\t\t\t//)\n\t\t\t\t\t)\n\t\t\t)\n\t}\n\n}",
+    "variables": []
+  },
+  "id": "Page1_Run_Search",
+  "deleted": false,
+  "gitSyncId": "62217d0f45ea27345b495163_62330c9e0c166d1757961855"
+}

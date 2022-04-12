@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 53,
+          "version": 56,
           "minHeight": 730,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -83,13 +83,13 @@
                       "animateLoading": true,
                       "parentColumnSpace": 2.353271484375,
                       "dynamicTriggerPathList": [],
+                      "overflow": "NONE",
                       "leftColumn": 34,
                       "dynamicBindingPathList": [
                         {
                           "key": "text"
                         }
                       ],
-                      "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
                       "text": "{{function(){\nlet data = Keyword.text\nif (Experience.isChecked)\nreturn data\nelse\nreturn 'z#'\n}()}}\n",
                       "key": "ogytqi6x6i",
@@ -99,7 +99,6 @@
                       "isVisible": true,
                       "fontStyle": "BOLD",
                       "textColor": "#231F20",
-                      "shouldScroll": false,
                       "version": 1,
                       "parentId": "5voaihogtx",
                       "renderMode": "CANVAS",
@@ -118,13 +117,13 @@
                       "animateLoading": true,
                       "parentColumnSpace": 2.353271484375,
                       "dynamicTriggerPathList": [],
+                      "overflow": "NONE",
                       "leftColumn": 17,
                       "dynamicBindingPathList": [
                         {
                           "key": "text"
                         }
                       ],
-                      "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
                       "text": "{{function(){\nlet data = Keyword.text\nif (Summary.isChecked)\nreturn data\nelse\nreturn 'z#'\n}()}}\n",
                       "key": "ogytqi6x6i",
@@ -134,7 +133,6 @@
                       "isVisible": true,
                       "fontStyle": "BOLD",
                       "textColor": "#231F20",
-                      "shouldScroll": false,
                       "version": 1,
                       "parentId": "5voaihogtx",
                       "renderMode": "CANVAS",
@@ -153,13 +151,13 @@
                       "animateLoading": true,
                       "parentColumnSpace": 2.353271484375,
                       "dynamicTriggerPathList": [],
+                      "overflow": "NONE",
                       "leftColumn": 2,
                       "dynamicBindingPathList": [
                         {
                           "key": "text"
                         }
                       ],
-                      "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
                       "text": "{{function(){\nlet data = Keyword.text\nif (Headline.isChecked)\nreturn data\nelse\nreturn 'z#'\n}()}}\n",
                       "key": "ogytqi6x6i",
@@ -169,7 +167,6 @@
                       "isVisible": true,
                       "fontStyle": "BOLD",
                       "textColor": "#231F20",
-                      "shouldScroll": false,
                       "version": 1,
                       "parentId": "5voaihogtx",
                       "renderMode": "CANVAS",
@@ -188,13 +185,13 @@
                       "animateLoading": true,
                       "parentColumnSpace": 2.353271484375,
                       "dynamicTriggerPathList": [],
+                      "overflow": "NONE",
                       "leftColumn": 49,
                       "dynamicBindingPathList": [
                         {
                           "key": "text"
                         }
                       ],
-                      "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
                       "text": "{{function(){\nlet data = Keyword.text\nif (ResumeText.isChecked)\nreturn data\nelse\nreturn 'z#'\n}()}}\n",
                       "key": "ogytqi6x6i",
@@ -204,7 +201,6 @@
                       "isVisible": true,
                       "fontStyle": "BOLD",
                       "textColor": "#231F20",
-                      "shouldScroll": false,
                       "version": 1,
                       "parentId": "5voaihogtx",
                       "renderMode": "CANVAS",
@@ -242,7 +238,7 @@
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 7.582763671875,
-              "leftColumn": 46,
+              "leftColumn": 51,
               "dynamicBindingPathList": [],
               "children": [
                 {
@@ -284,13 +280,13 @@
                       "animateLoading": true,
                       "parentColumnSpace": 7.582763671875,
                       "dynamicTriggerPathList": [],
+                      "overflow": "TRUNCATE",
                       "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
                           "key": "text"
                         }
                       ],
-                      "shouldTruncate": true,
                       "truncateButtonColor": "#FFC13D",
                       "text": "<b>Companies :</b>\n<ul>{{function(){\nlet data = Table1.selectedRow.companies;\ndata = JSON.parse(data)\nlet out = ''\nfor (let x in data){\nif(data[x][\"endYear\"]!=null)\nout += \"\\u2022 \"+data[x][\"position\"] + \" at \" + data[x][\"companyName\"]+ \" (\" +data[x][\"startMonth\"]+\"-\"+data[x][\"startYear\"] + \" to \" + data[x][\"endMonth\"]+\"-\"+data[x][\"endYear\"] +\")\\n\"\nelse\nout += \"\\u2022 \"+data[x][\"position\"] + \" at \" + data[x][\"companyName\"]+ \" (\" +data[x][\"startMonth\"]+\"-\"+data[x][\"startYear\"] + \" to \"+\"Present\"+\")\\n\"\n}\nreturn out;\n}()}}\n",
                       "key": "vski9kj3b8",
@@ -301,7 +297,6 @@
                       "isVisible": true,
                       "fontStyle": "",
                       "textColor": "#231F20",
-                      "shouldScroll": true,
                       "version": 1,
                       "parentId": "mg6dm77x14",
                       "renderMode": "CANVAS",
@@ -321,13 +316,13 @@
                       "animateLoading": true,
                       "parentColumnSpace": 7.582763671875,
                       "dynamicTriggerPathList": [],
+                      "overflow": "TRUNCATE",
                       "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
                           "key": "text"
                         }
                       ],
-                      "shouldTruncate": true,
                       "truncateButtonColor": "#FFC13D",
                       "text": "<b>Headline &nbsp;:</b> {{Table1.selectedRow.headline}}\n",
                       "key": "vski9kj3b8",
@@ -337,7 +332,6 @@
                       "isVisible": true,
                       "fontStyle": "",
                       "textColor": "#231F20",
-                      "shouldScroll": true,
                       "version": 1,
                       "parentId": "mg6dm77x14",
                       "renderMode": "CANVAS",
@@ -356,13 +350,13 @@
                       "animateLoading": true,
                       "parentColumnSpace": 7.582763671875,
                       "dynamicTriggerPathList": [],
+                      "overflow": "NONE",
                       "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
                           "key": "text"
                         }
                       ],
-                      "shouldTruncate": false,
                       "borderWidth": "0",
                       "truncateButtonColor": "#FFC13D",
                       "text": "<h3>\nLinkedIn Snapshot of {{Table1.selectedRow.firstName}} :\n</h3>\n",
@@ -374,7 +368,6 @@
                       "isVisible": true,
                       "fontStyle": "BOLD",
                       "textColor": "#231F20",
-                      "shouldScroll": false,
                       "version": 1,
                       "parentId": "mg6dm77x14",
                       "renderMode": "CANVAS",
@@ -393,13 +386,13 @@
                       "animateLoading": true,
                       "parentColumnSpace": 7.270263671875,
                       "dynamicTriggerPathList": [],
+                      "overflow": "SCROLL",
                       "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
                           "key": "text"
                         }
                       ],
-                      "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
                       "text": "<b>Education :</b>\n<ul>{{function(){\nlet data = Table1.selectedRow.educations;\ndata = JSON.parse(data)\nlet out = ''\nfor (let x in data){\nif(data[x][\"endYear\"]!=null)\nout += \"\\u2022 \"+data[x][\"degreeName\"] + \" at \" + data[x][\"schoolName\"]+ \" (\" +data[x][\"startYear\"] + \" to \" + data[x][\"endYear\"] +\")\\n\"\nelse\nout += \"\\u2022 \"+data[x][\"degreeName\"] + \" at \" + data[x][\"schoolName\"]+ \" (\" +data[x][\"startYear\"] + \" to \"+\"Present\"+\")\\n\"\n}\nreturn out;\n}()}}\n",
                       "key": "vski9kj3b8",
@@ -409,7 +402,6 @@
                       "isVisible": true,
                       "fontStyle": "",
                       "textColor": "#231F20",
-                      "shouldScroll": true,
                       "version": 1,
                       "parentId": "mg6dm77x14",
                       "renderMode": "CANVAS",
@@ -428,13 +420,13 @@
                       "animateLoading": true,
                       "parentColumnSpace": 7.270263671875,
                       "dynamicTriggerPathList": [],
+                      "overflow": "TRUNCATE",
                       "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
                           "key": "text"
                         }
                       ],
-                      "shouldTruncate": true,
                       "truncateButtonColor": "#FFC13D",
                       "text": "<b>Phone : </b>{{Table1.selectedRow.phoneNumber}}\n<b>Summary &nbsp;:</b> {{Table1.selectedRow.summary}}\n",
                       "key": "vski9kj3b8",
@@ -444,7 +436,6 @@
                       "isVisible": true,
                       "fontStyle": "",
                       "textColor": "#231F20",
-                      "shouldScroll": true,
                       "version": 1,
                       "parentId": "mg6dm77x14",
                       "renderMode": "CANVAS",
@@ -581,17 +572,18 @@
                 "customColumn1",
                 "firstName",
                 "Duplicacy",
-                "relevantExperience",
                 "headline",
+                "source",
+                "relevantExperience",
                 "publicidentifier",
                 "lastName",
-                "location",
                 "phoneNumber",
                 "Candidate_Email",
+                "location",
                 "companies",
                 "educations",
-                "score",
                 "summary",
+                "score",
                 "Scout_ID",
                 "Scout_FirstName",
                 "Scout_Email",
@@ -696,6 +688,9 @@
                 },
                 {
                   "key": "primaryColumns.forecastedCluster.computedValue"
+                },
+                {
+                  "key": "primaryColumns.source.computedValue"
                 }
               ],
               "leftColumn": 0,
@@ -754,7 +749,7 @@
                   "labelColor": "#FFFFFF",
                   "menuButtonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Open Menu'))}}",
                   "buttonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( function(){\n\tif(currentRow.phoneNumber)\n\treturn \"Send to GS\"\n\telse\n\treturn \"Send Email\"\n}()))}}",
-                  "onClick": "{{send_to_gs.run(() => showAlert('Sent Successfully, Check ure GS View','success'), () => showAlert('Query Failed, Check if Weekday PoC & jdToPitch is not empty or refresh and try.','warning'))}}",
+                  "onClick": "{{Run_Shortlist.runquery()}}",
                   "textSize": "PARAGRAPH",
                   "menuVariant": "PRIMARY",
                   "menuItems": {
@@ -1050,6 +1045,23 @@
                   "isDerived": false,
                   "label": "forecastedCluster",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.forecastedCluster))}}"
+                },
+                "source": {
+                  "index": 17,
+                  "width": 150,
+                  "id": "source",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "source",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.source))}}"
                 }
               },
               "delimiter": ",",
@@ -1100,7 +1112,7 @@
                   "labelColor": "#FFFFFF"
                 }
               },
-              "rightColumn": 46,
+              "rightColumn": 51,
               "textSize": "PARAGRAPH",
               "widgetId": "4cdc9mccyn",
               "isVisibleFilters": true,
@@ -1218,18 +1230,20 @@
               "dynamicBindingPathList": [],
               "labelStyle": "",
               "inputType": "TEXT",
-              "placeholderText": "Only 1 Name at a time. Eg : Microsoft",
+              "placeholderText": "Company Names seperated by a comma Eg : Microsoft, Weekday, Swiggy",
               "isDisabled": false,
               "key": "8513rnkvrr",
+              "validation": "",
               "isRequired": false,
               "rightColumn": 35,
               "widgetId": "mmkiw2mcpt",
               "isVisible": true,
-              "label": "Company",
+              "label": "Companies",
               "version": 2,
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "regex": "",
               "iconAlign": "left",
               "defaultText": ""
             },
@@ -1300,7 +1314,7 @@
             },
             {
               "widgetName": "Button1",
-              "onClick": "{{Run_queries.runquery()}}",
+              "onClick": "{{Run_Search.runquery()}}",
               "buttonColor": "#03B365",
               "dynamicPropertyPathList": [],
               "displayName": "Button",
@@ -1433,23 +1447,22 @@
               "animateLoading": true,
               "parentColumnSpace": 16.6875,
               "dynamicTriggerPathList": [],
-              "leftColumn": 4,
+              "overflow": "NONE",
+              "leftColumn": 25,
               "dynamicBindingPathList": [
                 {
                   "key": "text"
                 }
               ],
-              "shouldTruncate": false,
               "truncateButtonColor": "#FFC13D",
               "text": "{{function(){\nlet data = Query1.data\nlet out = ''\nfor (let x in data){\nout += \"'\"+ data[x][\"publicidentifier\"] + \"', \"\nif (x == data.length-1) \nout += \"'\"+ data[x][\"publicidentifier\"] + \"'\"\n} \nreturn out;\n}()}}\n",
               "key": "f0l3nwk8z2",
-              "rightColumn": 49,
+              "rightColumn": 42,
               "textAlign": "LEFT",
               "widgetId": "r1px3ob9a4",
               "isVisible": false,
               "fontStyle": "BOLD",
               "textColor": "#231F20",
-              "shouldScroll": false,
               "version": 1,
               "parentId": "0",
               "renderMode": "CANVAS",
@@ -1473,7 +1486,7 @@
               "displayName": "Table",
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
               "topRow": 66,
-              "bottomRow": 74,
+              "bottomRow": 76,
               "isSortable": true,
               "parentRowSpace": 10,
               "type": "TABLE_WIDGET",
@@ -1858,6 +1871,146 @@
               "isLoading": false,
               "buttonVariant": "PRIMARY",
               "placement": "CENTER"
+            },
+            {
+              "widgetName": "Text10",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b52.svg",
+              "topRow": 84,
+              "bottomRow": 92,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "parentColumnSpace": 16.734375,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 42,
+              "dynamicBindingPathList": [
+                {
+                  "key": "text"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "#FFC13D",
+              "text": "{{function(){\nlet data = Company.text.split(\" \").join(\"\").toLowerCase().split(\",\")\nlet out = ''\nfor (let x in data){\nout += \"LOWER(people.companies) LIKE '%\"+ data[x] +\"%'\"\nif (x != data.length-1) \nout += \" OR \"\n} \nreturn out;\n}()}}\n",
+              "key": "bwaarr37wz",
+              "rightColumn": 58,
+              "textAlign": "LEFT",
+              "widgetId": "nw7gsgoyfn",
+              "isVisible": false,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "fontSize": "PARAGRAPH"
+            },
+            {
+              "widgetName": "Text11",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b52.svg",
+              "topRow": 88,
+              "bottomRow": 92,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "parentColumnSpace": 16.734375,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 58,
+              "dynamicBindingPathList": [
+                {
+                  "key": "text"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "#FFC13D",
+              "text": "{{test.datediff()}}",
+              "key": "bwaarr37wz",
+              "rightColumn": 64,
+              "textAlign": "LEFT",
+              "widgetId": "okdlmcyb0u",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "fontSize": "PARAGRAPH"
+            },
+            {
+              "widgetName": "rs_record_id",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b52.svg",
+              "topRow": 78,
+              "bottomRow": 82,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "parentColumnSpace": 16.734375,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 44,
+              "dynamicBindingPathList": [
+                {
+                  "key": "text"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "#FFC13D",
+              "text": "{{function(){\nlet data = send_to_rs.data.records\nreturn data[0].id;\n}()}}",
+              "key": "bwaarr37wz",
+              "rightColumn": 54,
+              "textAlign": "LEFT",
+              "widgetId": "9jxfkt2aet",
+              "isVisible": false,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "fontSize": "PARAGRAPH"
+            },
+            {
+              "widgetName": "shortlist_count",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b52.svg",
+              "topRow": 83,
+              "bottomRow": 87,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "parentColumnSpace": 16.734375,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 58,
+              "dynamicBindingPathList": [
+                {
+                  "key": "text"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "#FFC13D",
+              "text": "{{appsmith.store.count}}",
+              "key": "bwaarr37wz",
+              "rightColumn": 64,
+              "textAlign": "LEFT",
+              "widgetId": "3qo70ybwb8",
+              "isVisible": false,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "fontSize": "PARAGRAPH"
             }
           ]
         },
@@ -1889,6 +2042,8 @@
           "Table1",
           "Table2",
           "Text1",
+          "Text10",
+          "Text11",
           "Text3",
           "Text4",
           "Text5",
@@ -1897,7 +2052,9 @@
           "WeekdayPOC",
           "jdToPitch",
           "maxExp",
-          "minExp"
+          "minExp",
+          "rs_record_id",
+          "shortlist_count"
         ],
         "validOnPageLoadActions": true,
         "id": "Page1",

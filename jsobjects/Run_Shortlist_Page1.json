@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Run_Shortlist",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\nrunquery :  \n\t()=> {\t\t\n\t\t\t\tsend_to_gs.run(\n\t\t\t\t\t\t()=>{\n\t\t\t\t\t\t\tlet x = appsmith.store.count;\n\t\t\t\t\t\t\tx = x+1;\n\t\t\t\t\t\t\tstoreValue(\"count\",x);\n\t\t\t\t\t\t\tupdate_rs.run()\n\t\t\t\t\t\t}\n\t\t\t\t\t\t\t)\n\t\t\t\n\t}\n}",
+    "variables": []
+  },
+  "id": "Page1_Run_Shortlist",
+  "deleted": false,
+  "gitSyncId": "62217d0f45ea27345b495163_625162696a70ad452dee117c"
+}

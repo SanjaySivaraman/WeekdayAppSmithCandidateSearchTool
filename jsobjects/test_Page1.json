@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "test",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tdatediff : () => {\n\t\tlet date = new Date(\"2022-02-07T10:32:28.000Z\");\n\t\tlet today = Date.now()\n\t\treturn today\n\t},\n\t\n}\n",
+    "variables": []
+  },
+  "id": "Page1_test",
+  "deleted": false,
+  "gitSyncId": "62217d0f45ea27345b495163_62512ff96a70ad452dee0757"
+}

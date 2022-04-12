@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "runquery",
-    "fullyQualifiedName": "Run_Shortlist.runquery",
+    "name": "increment_count",
+    "fullyQualifiedName": "Shortlisted_Count.increment_count",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,16 +14,17 @@
       "userPermissions": []
     },
     "pageId": "Page1",
-    "collectionId": "Page1_Run_Shortlist",
+    "collectionId": "Page1_Shortlisted_Count",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "()=> {\t\t\n\t\t\t\tsend_to_gs.run(\n\t\t\t\t\t\t()=>{\n\t\t\t\t\t\t\tlet x = appsmith.store.count;\n\t\t\t\t\t\t\tx = x+1;\n\t\t\t\t\t\t\tstoreValue(\"count\",x);\n\t\t\t\t\t\t\tupdate_rs.run()\n\t\t\t\t\t\t}\n\t\t\t\t\t\t\t)\n\t\t\t\n\t}",
+      "body": "() => {\n\t\tlet x = appsmith.store.count;\n\t\tx = x+1;\n\t\tstoreValue(\"count\",x);\n\t}",
       "jsArguments": [],
       "isAsync": true
     },
     "executeOnLoad": false,
+    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -33,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "()=> {\t\t\n\t\t\t\tsend_to_gs.run(\n\t\t\t\t\t\t()=>{\n\t\t\t\t\t\t\tlet x = appsmith.store.count;\n\t\t\t\t\t\t\tx = x+1;\n\t\t\t\t\t\t\tstoreValue(\"count\",x);\n\t\t\t\t\t\t\tupdate_rs.run()\n\t\t\t\t\t\t}\n\t\t\t\t\t\t\t)\n\t\t\t\n\t}"
+      "() => {\n\t\tlet x = appsmith.store.count;\n\t\tx = x+1;\n\t\tstoreValue(\"count\",x);\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_Run_Shortlist.runquery",
+  "id": "Page1_Shortlisted_Count.increment_count",
   "deleted": false,
-  "gitSyncId": "62217d0f45ea27345b495163_625162a46a70ad452dee1183"
+  "gitSyncId": "62217d0f45ea27345b495163_624fc3ca457aa64da9e027b6"
 }

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Shortlisted_Count",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tincrement_count: () => {\n\t\tlet x = appsmith.store.count;\n\t\tx = x+1;\n\t\tstoreValue(\"count\",x);\n\t}\n}",
+    "variables": []
+  },
+  "id": "Page1_Shortlisted_Count",
+  "deleted": false,
+  "gitSyncId": "62217d0f45ea27345b495163_624fc3ca457aa64da9e027ba"
+}

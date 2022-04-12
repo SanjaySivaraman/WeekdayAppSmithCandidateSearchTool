@@ -2,7 +2,7 @@
   "pluginType": "SAAS",
   "pluginId": "google-sheets-plugin",
   "unpublishedAction": {
-    "name": "Search_Logs",
+    "name": "Shortlist_Logs",
     "datasource": {
       "pluginId": "google-sheets-plugin",
       "messages": [],
@@ -20,7 +20,7 @@
       "pluginSpecifiedTemplates": [
         {
           "key": "method",
-          "value": "APPEND"
+          "value": "UPDATE"
         },
         {
           "key": "sheetUrl",
@@ -56,7 +56,7 @@
         },
         {
           "key": "rowObject",
-          "value": "{{\n{\n \t\"Timestamp\" : Date(),\n\t\"Weekday_POC\" : WeekdayPOC.selectedOptionValue,\n \t\"Jd_to_pitch\" : jdToPitch.selectedOptionValue,\n \t\"Candidates_Found_Count\" : Query1.data.length,\n \t\"Search_Company\" : Company.text,\n\t\"Search_Education\" : College.text,\n\t\"Search_Cluster\" : Cluster.selectedOptionValue,\n\t\"Search_Keyword\" : Keyword.text,\n \t\"In_Headline\" : Headline.isChecked,\n \t\"In_Summary\" : Summary.isChecked,\n\t\"In_Experience\" : Experience.isChecked,\n\t\"In_Resume_Text\" : ResumeText.isChecked,\n\t\"Min_Exp\" : minExp.text,\n\t\"Max_Exp\" : maxExp.text,\n\t\"Location\": Location.text,\n\t\"Contact Info\" : Contact.selectedOptionLabel\n}\n}}"
+          "value": "{\n  \"rowIndex\": 1,\n  \"Shortlisted_Count\": 3 \n}"
         },
         {
           "key": "rowObjects"
@@ -82,23 +82,17 @@
       ]
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "pluginSpecifiedTemplates[9].value"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "{\n \t\"Timestamp\" : Date(),\n\t\"Weekday_POC\" : WeekdayPOC.selectedOptionValue,\n \t\"Jd_to_pitch\" : jdToPitch.selectedOptionValue,\n \t\"Candidates_Found_Count\" : Query1.data.length,\n \t\"Search_Company\" : Company.text,\n\t\"Search_Education\" : College.text,\n\t\"Search_Cluster\" : Cluster.selectedOptionValue,\n\t\"Search_Keyword\" : Keyword.text,\n \t\"In_Headline\" : Headline.isChecked,\n \t\"In_Summary\" : Summary.isChecked,\n\t\"In_Experience\" : Experience.isChecked,\n\t\"In_Resume_Text\" : ResumeText.isChecked,\n\t\"Min_Exp\" : minExp.text,\n\t\"Max_Exp\" : maxExp.text,\n\t\"Location\": Location.text,\n\t\"Contact Info\" : Contact.selectedOptionLabel\n}"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_Search_Logs",
+  "id": "Page1_Shortlist_Logs",
   "deleted": false,
-  "gitSyncId": "62217d0f45ea27345b495163_624bbea751a8863d6c4016f8"
+  "gitSyncId": "62217d0f45ea27345b495163_624fc130457aa64da9e0276a"
 }
