@@ -571,23 +571,24 @@
               "columnOrder": [
                 "customColumn1",
                 "firstName",
+                "relevantExperience",
                 "Duplicacy",
                 "headline",
-                "source",
-                "relevantExperience",
-                "publicidentifier",
                 "lastName",
                 "phoneNumber",
+                "publicidentifier",
                 "Candidate_Email",
+                "summary",
                 "location",
                 "companies",
                 "educations",
-                "summary",
                 "score",
-                "Scout_ID",
                 "Scout_FirstName",
-                "Scout_Email",
                 "forecastedCluster",
+                "Scout_ID",
+                "Scout_Email",
+                "source",
+                "Scout_pID",
                 "customColumn2"
               ],
               "isVisibleDownload": true,
@@ -691,6 +692,9 @@
                 },
                 {
                   "key": "primaryColumns.source.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Scout_pID.computedValue"
                 }
               ],
               "leftColumn": 0,
@@ -1062,6 +1066,23 @@
                   "isDerived": false,
                   "label": "source",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.source))}}"
+                },
+                "Scout_pID": {
+                  "index": 17,
+                  "width": 150,
+                  "id": "Scout_pID",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Scout_pID",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Scout_pID))}}"
                 }
               },
               "delimiter": ",",
@@ -1145,7 +1166,7 @@
                 "relevantExperience": 60,
                 "publicidentifier": 211,
                 "Duplicate": 217,
-                "Duplicacy": 248
+                "Duplicacy": 60
               }
             },
             {
